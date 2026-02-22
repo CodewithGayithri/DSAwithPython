@@ -1,10 +1,10 @@
-# 🚀 DSAwithPython
+## 🚀 DSAwithPython
 
 A structured collection of Data Structures and Algorithms implemented in Python.
 This repository is created to strengthen problem-solving skills and build a strong foundation in core computer science concepts.
 
-# #📌 About This Repository
-This project covers:
+### 📌 About This Repository
+#### This project covers:
 📚 Data Structures
 ⚡ Algorithms
 🧠 Problem Solving
