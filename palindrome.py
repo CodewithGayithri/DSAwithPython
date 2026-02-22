@@ -3,7 +3,7 @@ num = n
 res = 0
 
 while num > 0:
-    rem = num % 10
-    res = (res * 10) + rem
+    last_digit = num % 10
+    res = (res * 10) + last_digit
     num = num // 10
 print(n == res)
