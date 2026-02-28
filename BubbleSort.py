@@ -8,6 +8,6 @@ def bubblesort(nums):
     return nums
 
 nums = [6,3,5,7,8]
-res = bubblesort(nums)
+res = bubblesort(nums) 
 print(res)
     
