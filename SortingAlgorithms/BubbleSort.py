@@ -7,7 +7,8 @@ def bubblesort(nums):
                 nums[j+1] = temp
     return nums
 
-nums = [6,3,5,7,8]
+# nums = [6,3,5,7,8]
+nums = list(map(int,input("Enter the List: ").split()))
 res = bubblesort(nums)
 print(res)
     
