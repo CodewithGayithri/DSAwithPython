@@ -10,5 +10,5 @@ def SelectionSort(nums):
                 min_ind = j
         nums[i],nums[min_ind] = nums[min_ind], nums[i]
     return nums
-res = SelectionSort(nums)
+res = SelectionSort(nums) 
 print(res)
