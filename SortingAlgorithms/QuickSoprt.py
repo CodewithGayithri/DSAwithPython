@@ -1,22 +1,26 @@
-def partition(nums, low, high):
-    pivot = nums[low]
-    i=low, 
+def partition(arr, low, high):
+    pivot = arr[low]
+    i=low 
     j=high
     while i<j:
-        while nums[i]<pivot and i<=high-1:
+        while arr[i]<=pivot and i<=high-1:
             i+=1
-        while nums[j]>pivot and j >=low+1:
+        while arr[j]>pivot and j >=low+1:
             j -= 1
         if i<j:
-            nums[i], nums[j] = nums[j], nums[i]
+            arr[i], arr[j] = arr[j], arr[i]
 
-    nums[low], nums[j] = nums[j], nums[low]
+    arr[low], arr[j] = arr[j], arr[low]
     return j
-nums = list(map(int,input("enter The Array: ").split()))
-def quicksort(nums,low,high):
-    if i<j:
-        p_indx = partition(nums,low,high)
-        quicksort(nums,low,p_indx-1)
-        quicksort(nums,p_indx+1, high)
-    return nums
+
+arr = list(map(int,input("enter The Array: ").split()))
+
+def quicksort(arr,low,high):
+    if low<high:
+        p_indx = partition(arr,low,high)
+        quicksort(arr,low,p_indx-1)
+        quicksort(arr,p_indx+1, high)
+
+quicksort(arr,0,len(arr)-1)
+print("sorted array: ",arr)
 
