@@ -4,6 +4,7 @@
 
 #Space Complexity o(n)
 
+
 def partition(arr, low, high):
     pivot = arr[low]
     i=low 
@@ -12,7 +13,7 @@ def partition(arr, low, high):
         while arr[i]<=pivot and i<=high-1:
             i+=1
         while arr[j]>pivot and j >=low+1:
-            j -= 1 
+            j-=1 
         if i<j:
             arr[i], arr[j] = arr[j], arr[i]
 
