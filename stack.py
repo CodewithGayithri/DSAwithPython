@@ -8,10 +8,10 @@ def pop():
     if len(stack) == -1:
         print("Empty Stack")
     else:
-        e = stack.pop()
-        print("Deleted Item: ",e)
+        deleted_item = stack.pop()
+        print("Deleted Item: ",deleted_item)
 
-def access():
+def access_elemnt():
     return stack
 
 
