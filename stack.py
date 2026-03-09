@@ -5,8 +5,8 @@ def push():
     stack.append(user)
 
 def pop():
-    if len(stack) == -1:
-        print("Empty Stack")
+    if len(stack) == 0:
+        print("Empty Stack!")
     else:
         deleted_item = stack.pop()
         print("Deleted Item: ",deleted_item)
