@@ -23,7 +23,7 @@ while True:
     elif choose == 2:
         pop()
     elif choose == 3:
-        access()
+        access_elemnt()
         print(stack)
     elif choose == 4:
         break
