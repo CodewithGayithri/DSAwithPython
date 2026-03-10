@@ -10,6 +10,7 @@ def pop():
     else:
         deleted_item = stack.pop()
         print("Deleted Item: ",deleted_item)
+        print(stack)
 
 def access_elemnt():
     return stack
