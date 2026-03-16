@@ -7,6 +7,6 @@ def find(arr):
         elif n > max:
             max = n
     return max,min
-arr = [2,4,10,6,7]
+arr = list(map(int,input("Enter The Array: ").split()))
 max,min = find(arr)
 print(f"Maximum Number is :{max}\nMinimum Number is: {min}")
